@@ -25,9 +25,19 @@ Currently finishing my B.Tech in CS at FISAT, Kochi — graduating 2026.
 AI-powered tactical match predictions for World Cup 2026. Gemini searches for
 live injury news, squad form, and H2H records before generating structured
 predictions — no stale training data. Two-step grounded generation pipeline
-with Redis caching..
+with Redis caching and a real-time community voting layer via WebSockets.
 
----
+**How it works**
+- Static match data (fixtures, venues, team stats) loaded from curated JSON files
+- Gemini 2.5 Flash with Google Search grounding fetches live squad news and injuries
+- Two-step generation: research call (grounded) → structure call (JSON schema via Pydantic)
+- Redis caches predictions per match to avoid redundant API calls
+
+**Planned**
+- [ ] Live player & form data via football-data API integration
+- [ ] Real-time community prediction voting with WebSockets
+- [ ] RAG layer — embed injury reports and press conference transcripts
+      into a vector store for deeper contextual grounding
 
 ## Projects
 
@@ -37,6 +47,14 @@ with Redis caching..
 Accepts uploaded documents or topic prompts and generates quiz questions and
 flashcards using Gemini. Streams LLM responses back to the frontend for
 responsive UX. 
+**How it works**
+- Documents are uploaded, chunked intelligently, and passed as context to Gemini
+- Gemini generates structured quiz questions and flashcards per chunk which are sent to React frontend
+- 
+**Planned**
+- [ ] Spaced repetition algorithm for smarter flashcard review scheduling
+- [ ] Multi-document support — generate a unified quiz across several uploads
+- [ ] Performance analytics — track scores over time and surface weak topics
 
 demo link: https://www.linkedin.com/posts/jyothis-b-214437368_fastapi-python-backenddevelopment-ugcPost-7468392598114648064-wg4R/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFswU3ABnHcmx0jgLOlJFPtj_-L8h4rqgUM
 
