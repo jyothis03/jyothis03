@@ -13,7 +13,7 @@
 ---
 
 I build backend systems that are modular, well-structured, and actually work.  
-Currently finishing my B.Tech in CS at FISAT, Kochi — graduating 2026.
+Just finishied my B.Tech in Computer Science and Design at FISAT, Ernakulam ( 2022-26 )
 
 ---
 
