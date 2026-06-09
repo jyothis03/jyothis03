@@ -13,7 +13,7 @@
 ---
 
 I build backend systems that are modular, well-structured, and actually work.  
-Just finishied my B.Tech in Computer Science and Design at FISAT, Ernakulam ( 2022-26 )
+Just finished my B.Tech in Computer Science and Design at FISAT, Ernakulam ( 2022-26 )
 
 ---
 
