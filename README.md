@@ -36,7 +36,9 @@ with Redis caching..
 
 Accepts uploaded documents or topic prompts and generates quiz questions and
 flashcards using Gemini. Streams LLM responses back to the frontend for
-responsive UX. Supabase handles session storage, saved decks, and quiz history.
+responsive UX. 
+
+demo link: https://www.linkedin.com/posts/jyothis-b-214437368_fastapi-python-backenddevelopment-ugcPost-7468392598114648064-wg4R/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFswU3ABnHcmx0jgLOlJFPtj_-L8h4rqgUM
 
 ---
 
