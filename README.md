@@ -28,7 +28,7 @@ predictions — no stale training data. Two-step grounded generation pipeline
 with Redis caching and a real-time community voting layer via WebSockets.
 
 **How it works**
-- Static match data (fixtures, venues, team stats) loaded from curated JSON files
+- Static match data (fixtures, venues, team stats) limited to World Cup 2026 is loaded from curated JSON files
 - Gemini 2.5 Flash with Google Search grounding fetches live squad news and injuries
 - Two-step generation: research call (grounded) → structure call (JSON schema via Pydantic)
 - Redis caches predictions per match to avoid redundant API calls
@@ -50,7 +50,7 @@ responsive UX.
 **How it works**
 - Documents are uploaded, chunked intelligently, and passed as context to Gemini
 - Gemini generates structured quiz questions and flashcards per chunk which are sent to React frontend
-- 
+  
 **Planned**
 - [ ] Spaced repetition algorithm for smarter flashcard review scheduling
 - [ ] Multi-document support — generate a unified quiz across several uploads
