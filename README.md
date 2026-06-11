@@ -34,10 +34,12 @@ with Redis caching and a real-time community voting layer via WebSockets.
 - Redis caches predictions per match to avoid redundant API calls
 
 **Planned**
+- [ ] Automated daily prediction pipeline that stores results in the database for low-latency access.
 - [ ] Live player & form data via football-data API integration
 - [ ] Real-time community prediction voting with WebSockets
 - [ ] RAG layer — embed injury reports and press conference transcripts
       into a vector store for deeper contextual grounding
+  
 
 ## Projects
 
